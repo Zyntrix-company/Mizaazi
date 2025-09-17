@@ -11,7 +11,7 @@ export function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
-      <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
+      <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-50">
         <source
           src="/IMG_3352.MP4?height=1080&width=1920&query=musician performing on stage with dramatic lighting"
           type="video/mp4"
@@ -19,7 +19,6 @@ export function HeroSection() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 video-overlay" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 max-w-4xl mx-auto">
@@ -55,35 +54,35 @@ export function HeroSection() {
 </div>
 
 {/* Social Icons Block */}
-<div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-10">
+<div className="flex gap-4 justify-center items-center mt-10">
   <a
     href="https://www.instagram.com/mizaaz_music_lover/"
     target="_blank"
     rel="noopener noreferrer"
-    className="group flex items-center gap-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl min-w-[100px] justify-center"
+    className="group transition-all duration-300 transform hover:scale-110"
+    title="Follow on mizaaz_music_lover"
   >
-    <FaInstagram className="w-4 h-4 group-hover:animate-pulse" />
-    <span className="font-semibold text-sm">Follow on mizaaz_music_lover</span>
+    <FaInstagram className="w-8 h-8 text-white hover:text-orange-400 group-hover:animate-pulse transition-colors duration-300" />
   </a>
 
   <a
     href="https://www.instagram.com/miz_aazi/"
     target="_blank"
     rel="noopener noreferrer"
-    className="group flex items-center gap-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl min-w-[100px] justify-center"
+    className="group transition-all duration-300 transform hover:scale-110"
+    title="Follow on miz_aazi"
   >
-    <FaInstagram className="w-4 h-4 group-hover:animate-pulse" />
-    <span className="font-semibold text-sm">Follow on miz_aazi</span>
+    <FaInstagram className="w-8 h-8 text-white hover:text-cyan-400 group-hover:animate-pulse transition-colors duration-300" />
   </a>
 
   <a
     href="https://youtube.com/@mizaazmusiclover?feature=shared"
     target="_blank"
     rel="noopener noreferrer"
-    className="group flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl min-w-[100px] justify-center"
+    className="group transition-all duration-300 transform hover:scale-110"
+    title="Subscribe on YouTube"
   >
-    <FaYoutube className="w-4 h-4 group-hover:animate-pulse" />
-    <span className="font-semibold text-sm">Subscribe on YouTube</span>
+    <FaYoutube className="w-8 h-8 text-white hover:text-red-400 group-hover:animate-pulse transition-colors duration-300" />
   </a>
 </div>
 

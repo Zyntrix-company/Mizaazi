@@ -127,9 +127,10 @@
   }
 }
 
-/* Enhanced video overlay with darker gradient */
+/* Enhanced video overlay with lighter gradient */
 .video-overlay {
-  background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
 }
 
 html {
